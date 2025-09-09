@@ -32,5 +32,5 @@ The goal of this project is to provide researchers and science enthusiasts with 
 5. **Publish** the episode via an RSS feed
 
 ## Entry point
-python generate_podcast.py
+```python generate_podcast.py```
 
