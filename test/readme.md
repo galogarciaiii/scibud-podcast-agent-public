@@ -1,1 +1,0 @@
-This is the folder where the podcast.db database file will be downloaded to for generation of the flagship AI and biology Scibud podcast.
