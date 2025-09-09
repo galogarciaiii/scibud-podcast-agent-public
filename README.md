@@ -36,7 +36,7 @@ The goal of this project is to provide researchers and science enthusiasts with 
 
 ## ⚙️ System Architecture
 
-The podcast pipeline is coordinated by two core components:
+The pipeline is coordinated by two core components:
 
 ### **1. PodcastCreator**
 
@@ -63,33 +63,26 @@ Manages the **end-to-end process** of creating a podcast episode:
 13. **Upload database** to cloud storage.
 14. **Cleanup local database file** after publishing.
 
-Each assistant has a clear responsibility:
-
-* **RetrievalAssistant** – fetches articles and full texts
-* **EditorialAssistant** – scores articles and writes scripts
-* **ProductionAssistant** – generates audio and RSS feed
-* **StorageAssistant** – manages DB and cloud uploads
-* **CommunicationAssistant** – posts updates to social platforms
-
 ---
-👩‍💻 Assistants
 
-The system follows a separation of concerns design, where each assistant manages one domain:
+## 👩‍💻 Assistants
 
-RetrievalAssistant
-Queries selected sources (PubMed, bioRxiv, arXiv) and fetches both metadata and full-text content.
+The system follows a **separation of concerns** design, where each assistant manages one domain:
 
-EditorialAssistant
-Scores and ranks articles using fixed criteria. Generates podcast scripts, episode titles, descriptions, and social media posts using LLMs.
+* **RetrievalAssistant**
+  Queries selected sources (PubMed, bioRxiv, arXiv) and fetches both metadata and full-text content.
 
-ProductionAssistant
-Converts scripts into narrated audio files using text-to-speech and generates the RSS feed XML for publishing.
+* **EditorialAssistant**
+  Scores and ranks articles using fixed criteria. Generates podcast scripts, episode titles, descriptions, and social media posts using LLMs.
 
-StorageAssistant
-Handles all persistence operations—downloads and uploads files to cloud storage, manages the database, retrieves episode history, and removes local files after publishing.
+* **ProductionAssistant**
+  Converts scripts into narrated audio files using text-to-speech and generates the RSS feed XML for publishing.
 
-CommunicationAssistant
-Posts episode highlights and promotional content to social media platforms (e.g., Bluesky).
+* **StorageAssistant**
+  Handles all persistence operations—downloads and uploads files to cloud storage, manages the database, retrieves episode history, and removes local files after publishing.
+
+* **CommunicationAssistant**
+  Posts episode highlights and promotional content to social media platforms (e.g., Bluesky).
 
 ---
 
