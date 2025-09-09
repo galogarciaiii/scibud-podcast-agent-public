@@ -1,7 +1,3 @@
-Here’s a merged and cleaned-up **README.md** that combines your version and mine into one consistent document:
-
----
-
 # SciBud Podcast Agent
 
 The **SciBud Podcast Agent** is an automated pipeline for generating daily science podcasts highlighting the latest discoveries in **biology and AI**. The system retrieves newly published research from PubMed, bioRxiv, and arXiv, scores and ranks articles based on scientific rigor and relevance, generates podcast scripts using large language models (LLMs), and produces narrated audio episodes. It then updates an RSS feed and publishes content to podcast platforms.
@@ -117,7 +113,3 @@ A cron job on a Google Cloud VM automates daily podcast generation.
 
 This public version omits private configuration files (e.g., API keys, database credentials, bucket names).
 You’ll need to provide your own `config.json` for full functionality.
-
----
-
-Would you like me to also add a **flowchart diagram (mermaid or image)** showing the assistants and how they interact (retrieval → scoring → production → publishing) for clarity?
