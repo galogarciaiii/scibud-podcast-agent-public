@@ -2,7 +2,7 @@
 
 **scibud-podcast-agent** is an automated pipeline for generating daily science podcasts highlighting the latest discoveries in **biology and AI**. The system retrieves newly published research from sources like PubMed, bioRxiv, and arXiv, scores and ranks articles based on relevance and scientific rigor, and generates podcast scripts using LLMs. The pipeline then produces audio episodes, updates an RSS feed, and publishes the content for listeners.
 
-The private version of this repo underlies the ongoing production of SciBud podcasts. [Find the podcasts on Apple Podcasts.] (podcast/scibud-emerging-discoveries-from-bioimaging/id1740828391)
+The private version of this repo underlies the ongoing production of SciBud podcasts. [Find the podcasts on Apple Podcasts.] (https://podcast/scibud-emerging-discoveries-from-bioimaging/id1740828391)
 
 ## Features
 
