@@ -41,3 +41,6 @@ Modify the generate_podcast script to change queries and article sources. Execut
 ## Requirements not present here
 The configs are not present in this public version.
 
+python ai_and_biology.py
+
+
