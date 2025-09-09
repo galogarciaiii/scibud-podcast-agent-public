@@ -156,7 +156,7 @@ Tweak **query / sources / path** in `main()` (see `PodcastCreator`), or run via 
 
 ---
 
-## 🧪Features
+## Design Principles
 
 * **Robustness & Idempotency**
 
