@@ -31,3 +31,6 @@ The goal of this project is to provide researchers and science enthusiasts with 
 4. **Synthesize Audio** using a TTS engine  
 5. **Publish** the episode via an RSS feed
 
+## Entry point
+python generate_podcast.py
+
