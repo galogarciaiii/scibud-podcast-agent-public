@@ -1,0 +1,9 @@
+Generate a title for the podcast episode based on the research presented in the script.
+The title should clearly describe the primary research finding, and you can use '|' to combine related statements.
+Avoid using colons in the title.
+Only include acronyms if they are widely recognized (e.g., AI, RNA, DNA).
+
+Example:
+Enhancing Metabolite Identification with Machine Learning | Advancements in Spatial Metabolomics Analysis
+
+Script: {script}

@@ -1,0 +1,16 @@
+pytest
+openai
+arxiv
+google-cloud-storage
+google-cloud-texttospeech
+pytz
+pillow
+python-dotenv
+freezegun
+paperscraper
+pytest-mock
+types-pytz
+types-requests
+feedgen
+PyMuPDF
+beautifulsoup4

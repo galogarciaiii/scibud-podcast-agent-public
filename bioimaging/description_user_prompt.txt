@@ -1,0 +1,4 @@
+Generate a single-paragraph description for the podcast episode based on the following SCRIPT.
+The description should provide an engaging overview of the episode’s content, highlighting the key research findings and their relevance to the audience. Keep the tone informative but accessible.
+
+SCRIPT: {script}

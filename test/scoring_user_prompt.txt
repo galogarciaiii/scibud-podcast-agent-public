@@ -1,0 +1,36 @@
+Evaluate the following research article based on the criteria below.
+For each criterion, provide a score of 0 or 1, followed by a brief justification.
+Summarize with a total score out of 10 at the beginning.
+
+**Reproducibility (2 points total)**
+1. **Data availability**: Are the datasets publicly accessible, well-documented, and usable? (1 point)
+2. **Methodological transparency**: Are the methods clearly explained and sufficiently detailed for others to reproduce? (1 point)
+
+**Rigor (3 points total)**
+3. **Statistical methods**: Are the statistical methods appropriate for the data and clearly presented? (1 point)
+4. **Validation**: Were the experiments repeated, validated with external data, or confirmed through other means? (1 point)
+5. **Controls and confounding factors**: Were appropriate controls or comparisons used, and were potential confounding factors addressed? (1 point)
+
+**Novelty and Innovation (2 points total)**
+6. **Novel contribution**: Does the research address a novel question or provide a significant contribution to the field? (1 point)
+7. **New methods or innovations**: Does the research introduce new methods, tools, or significant innovations? (1 point)
+
+**Clarity and Completeness (2 points total)**
+8. **Writing clarity**: Is the writing clear, well-structured, and accessible to the target audience? (1 point)
+9. **Literature review**: Is the literature review thorough, up-to-date, and critically engaged with prior research? (1 point)
+
+**Relevance (1 point total)**
+10. **Relevance to AI and biology**: Is the article relevant to both AI and biology? (1 point)
+
+This rubric keeps the questions straightforward and ensures each point is clearly assessable.
+
+**Instructions:**
+- Provide a score of 0 or 1 for each criterion.
+- Provide a justification for each score.
+- Begin your response with the TOTAL_SCORE, formatted like this example: TOTAL_SCORE = 5.
+
+**The full text of the article is below:**
+
+**Title:** {title}
+**Abstract:** {abstract}
+**Full Text:** {full_text}
