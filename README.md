@@ -156,7 +156,7 @@ Tweak **query / sources / path** in `main()` (see `PodcastCreator`), or run via 
 
 ---
 
-## 🧪 What Employers Care About
+## 🧪Features
 
 * **Robustness & Idempotency**
 
@@ -194,7 +194,7 @@ Tweak **query / sources / path** in `main()` (see `PodcastCreator`), or run via 
 
   * Bounded `max_results`; streaming PDFs; stepwise short-circuit on “no new” or low scores.
 
-*(CI, unit tests, and retries/backoff can be added easily—hooks are clear at service boundaries.)*
+*(CI, and retries/backoff can be added easily—hooks are clear at service boundaries.)*
 
 ---
 
@@ -283,10 +283,8 @@ if __name__ == "__main__":
 ## 🚀 Roadmap (Suggested)
 
 * Retries/backoff + circuit breakers at service layer
-* Unit tests for parsers (arXiv/bioRxiv/PubMed) and score parsing
 * Structured logs → GCP Logging; metrics via OpenTelemetry
 * Parallel fetch & batching; caching for repeat queries
-* CI/CD (lint, type-check, tests, deploy)
 
 ---
 
