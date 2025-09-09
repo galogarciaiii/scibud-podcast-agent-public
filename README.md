@@ -32,5 +32,9 @@ The goal of this project is to provide researchers and science enthusiasts with 
 5. **Publish** the episode via an RSS feed
 
 ## Entry point
+Execute the script to generate podcasts. Automation is performed by a cron job on a Google Cloud virtual machine.
 ```python generate_podcast.py```
+
+## Requirements not present here
+The configs are not present in this public version.
 
