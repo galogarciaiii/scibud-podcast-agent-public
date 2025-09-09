@@ -14,7 +14,7 @@ The private version of this repository underlies the ongoing production of SciBu
 * **Natural language script generation** optimized for clarity and engagement
 * **Text-to-speech synthesis** for professional narration
 * **Automated RSS feed updates** and publishing to podcast platforms
-* **Modular architecture** with dedicated assistants for retrieval, editorial, production, communication, and storage
+* **Modular architecture** with assistants and managers handling specialized tasks
 
 ---
 
@@ -67,22 +67,40 @@ Manages the **end-to-end process** of creating a podcast episode:
 
 ## 👩‍💻 Assistants
 
-The system follows a **separation of concerns** design, where each assistant manages one domain:
+The system uses **assistants** to divide responsibilities clearly:
 
-* **RetrievalAssistant**
-  Queries selected sources (PubMed, bioRxiv, arXiv) and fetches both metadata and full-text content.
+* **RetrievalAssistant** – Fetches articles and full texts from configured sources.
+* **EditorialAssistant** – Scores and ranks articles; generates podcast scripts, titles, descriptions, and social posts using LLMs.
+* **ProductionAssistant** – Converts scripts into audio with TTS and generates the RSS feed.
+* **StorageAssistant** – Handles databases, cloud storage, uploads, downloads, and cleanup.
+* **CommunicationAssistant** – Publishes promotional posts to social media platforms.
 
-* **EditorialAssistant**
-  Scores and ranks articles using fixed criteria. Generates podcast scripts, episode titles, descriptions, and social media posts using LLMs.
+---
 
-* **ProductionAssistant**
-  Converts scripts into narrated audio files using text-to-speech and generates the RSS feed XML for publishing.
+## 🧩 Managers
 
-* **StorageAssistant**
-  Handles all persistence operations—downloads and uploads files to cloud storage, manages the database, retrieves episode history, and removes local files after publishing.
+Managers are lower-level modules that handle specific operational domains for the assistants.
 
-* **CommunicationAssistant**
-  Posts episode highlights and promotional content to social media platforms (e.g., Bluesky).
+* **AudioManager**
+  Interfaces with Google TTS to synthesize long-form audio narration. Handles Google Cloud service authentication before generating episode audio.
+
+* **CloudStorageManager**
+  Provides upload/download operations for podcast assets using Google Cloud Storage. Manages authentication, API keys, and communication with the cloud.
+
+* **DBManager**
+  Handles SQLite operations for episode and article tracking. Inserts new episodes, updates article metadata, fetches full texts, checks whether articles were previously podcasted, and retrieves episode history.
+
+* **LocalStorageManager**
+  Manages local file cleanup. Removes temporary database or audio files after successful publishing.
+
+* **RSSManager**
+  Builds and formats the RSS feed XML for podcast distribution. Populates metadata, episodes, and links to audio files.
+
+* **SocialMediaManager**
+  Interfaces with the Bluesky API to authenticate and publish promotional posts for each episode.
+
+* **TextGenerationManager**
+  Wraps the OpenAI API for LLM-based text generation. Uses structured prompts to generate scripts, titles, descriptions, social media posts, and scoring justifications. Ensures responses are cleaned and properly formatted.
 
 ---
 
