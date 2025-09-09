@@ -72,6 +72,26 @@ Each assistant has a clear responsibility:
 * **CommunicationAssistant** – posts updates to social platforms
 
 ---
+👩‍💻 Assistants
+
+The system follows a separation of concerns design, where each assistant manages one domain:
+
+RetrievalAssistant
+Queries selected sources (PubMed, bioRxiv, arXiv) and fetches both metadata and full-text content.
+
+EditorialAssistant
+Scores and ranks articles using fixed criteria. Generates podcast scripts, episode titles, descriptions, and social media posts using LLMs.
+
+ProductionAssistant
+Converts scripts into narrated audio files using text-to-speech and generates the RSS feed XML for publishing.
+
+StorageAssistant
+Handles all persistence operations—downloads and uploads files to cloud storage, manages the database, retrieves episode history, and removes local files after publishing.
+
+CommunicationAssistant
+Posts episode highlights and promotional content to social media platforms (e.g., Bluesky).
+
+---
 
 ## 📂 Outputs
 
